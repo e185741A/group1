@@ -12,7 +12,7 @@
 ## DL，前処理
 １．githubからファイルをDL，解凍，前処理．
 
-１. icrawlerのインストール
+２．icrawlerのインストール
  ```
 $ pip install icrawler
 ```
