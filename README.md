@@ -11,13 +11,14 @@
 
 ## DL，前処理
 １．githubからファイルをDL，解凍，前処理．
-ターミナルで
-```
-$ git clone https://github.com/e185718/info3dm1G.git
+
+2.icrawlerのインストール
+ ```
+$ pip install icrawler
 ```
 
 ## 機械学習
-１．画像の収集
+１．icrawlerによる画像の収集
 ```
 from icrawler.builtin import BingImageCrawler
 crawler = BingImageCrawler(storage={"root_dir": "大野智"})
