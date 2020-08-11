@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module inflated</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>inflated</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/e185718/group1/inflated.py">/Users/e185718/group1/inflated.py</a></font></td></tr></table>
+    <p><tt>画像の水増しを行うプログラム。<br>
+学習画像を垂直方向への反転、90度回転、180度回転、グレー化、ヒストグラムの変更を行うことで画像の水増しを実行する。</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PIL.Image.html">PIL.Image</a><br>
+<a href="bs4.html">bs4</a><br>
+<a href="cv2.cv2.html">cv2.cv2</a><br>
+</td><td width="25%" valign=top><a href="urllib.error.html">urllib.error</a><br>
+<a href="glob.html">glob</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="urllib.parse.html">urllib.parse</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="urllib.request.html">urllib.request</a><br>
+<a href="requests.html">requests</a><br>
+<a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-bigger"><strong>bigger</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-blur"><strong>blur</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-gray"><strong>gray</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-horizontal_flip"><strong>horizontal_flip</strong></a>(image, member)</dt><dd><tt>画像の水平方向への反転<br>
+&nbsp;&nbsp;Argments:<br>
+&nbsp;&nbsp;image1&nbsp;(list):&nbsp;横方向に並んだピクセル値を一つのリストとして保持し、そのリストを複数保持した2重リスト。<br>
+&nbsp;&nbsp;image2&nbsp;(list):&nbsp;同上。<br>
+Returns:<br>
+&nbsp;&nbsp;なし。</tt></dd></dl>
+ <dl><dt><a name="-kaiten270"><strong>kaiten270</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-kaiten90"><strong>kaiten90</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-lighten"><strong>lighten</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-smaller"><strong>smaller</strong></a>(image, member)</dt></dl>
+ <dl><dt><a name="-vertical_flip"><strong>vertical_flip</strong></a>(image, member)</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>cascade</strong> = &lt;CascadeClassifier 0x118957c10&gt;<br>
+<strong>cascade_file</strong> = './haarcascade_frontalface_alt.xml'<br>
+<strong>img_dir</strong> = './arashi_image/'<br>
+<strong>img_path</strong> = './arashi_image/櫻井翔/face/299.jpg'<br>
+<strong>member</strong> = '櫻井翔'<br>
+<strong>members</strong> = ['松本潤', '二宮和也', '相葉雅紀', '大野智', '櫻井翔']<br>
+<strong>num</strong> = 299<br>
+<strong>nums</strong> = array([  0,   1,   2,   3,   4,   5,   6,   7,  ..., 292, 293, 294, 295, 296, 297, 298,
+       299])</td></tr></table>
+</body></html>
