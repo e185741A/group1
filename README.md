@@ -33,7 +33,7 @@ $ python img_collection_eye.py
 
 ３．(２．)で作成したdatasetを元に学習させる．結果はグラフと正解率を表示．
 ```
-$ python learning_2.py
+$ python learning.py
 ```
 
 4 . 用意しておいてオリジナルの写真で顔判別を行う
@@ -49,20 +49,20 @@ $ python test.py
 
 ## img_collection_eye.py：画像の瞳の部分だけを抽出する
 +  入手した画像をカスケード分類器で顔の部分を抽出する
-+ 抽出に失敗した画像をface3ディレクトリに入れる
++ 抽出に失敗した画像をeyeディレクトリに入れる
 
-## learning_2.py：datasetを学習を行う
-+ datasetを元に，tensorflow.kerasを用いて深層学習を行います.
+## learning.py：datasetを学習を行う
++ datasetを元に，モデルを作成し、kerasでモデルを構築し、VGG16をFine-tuningしてモデルの学習を行う.
 + 結果はグラフと正解率を表示．
 
 ## test.py：顔判別を行う
-+ tensorflowを使い用意しておいた写真の人物と学習した顔で認証を行う
-+ 結果出力で切り取られた顔写真と,それぞれのメンバー(松本潤,二宮和也,相葉雅紀,櫻井翔,大野智)に似ているかを数値で表す。
++ 用意しておいた写真の人物と学習した顔で認証を行う
++ 結果出力では切り取られた顔写真と,それぞれのメンバー(松本潤,二宮和也,相葉雅紀,櫻井翔,大野智)に似ているかを数値で表す。
 
 
 # 動作環境
 + Python 3.6.4
-+ tensorflow
++ tensorflow 1.12.0
 
 ##作成情報
 
