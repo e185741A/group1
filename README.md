@@ -12,13 +12,13 @@
 ## DL，前処理
 １．githubからファイルをDL，解凍，前処理．
 
-2.icrawlerのインストール
+１. icrawlerのインストール
  ```
 $ pip install icrawler
 ```
 
 ## 機械学習
-１．icrawlerによる画像の収集
+１．icrawlerによる画像の収集(大野智の画像を200枚集める場合)
 ```
 from icrawler.builtin import BingImageCrawler
 crawler = BingImageCrawler(storage={"root_dir": "大野智"})
