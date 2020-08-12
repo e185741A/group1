@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module learning</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>learning</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/e185718/info3dm/G1_2/learning.py">/Users/e185718/info3dm/G1_2/learning.py</a></font></td></tr></table>
+    <p><tt>モデルを作成し、kerasでモデルを構築し、VGG16をFine-tuningしてモデルの学習を行うプログラム。<br>
+Fine-tuningは、学習済モデルを、重みデータを一部再学習して特徴量抽出機として利用する学習方法である。</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="tensorflow._api.v1.keras.optimizers.html">tensorflow._api.v1.keras.optimizers</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="tensorflow.html">tensorflow</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>batch_size</strong> = 32<br>
+<strong>history</strong> = &lt;tensorflow.python.keras.callbacks.History object&gt;<br>
+<strong>img_height</strong> = 150<br>
+<strong>img_width</strong> = 150<br>
+<strong>input_tensor</strong> = &lt;tf.Tensor 'input_1:0' shape=(?, 150, 150, 3) dtype=float32&gt;<br>
+<strong>layer</strong> = &lt;tensorflow.python.keras.layers.pooling.MaxPooling2D object&gt;<br>
+<strong>members</strong> = ['松本潤', '二宮和也', '相葉雅紀', '櫻井翔', '大野智']<br>
+<strong>nb_epoch</strong> = 1<br>
+<strong>nb_members</strong> = 5<br>
+<strong>nb_train_samples</strong> = 800<br>
+<strong>nb_validation_samples</strong> = 200<br>
+<strong>result_dir</strong> = 'results'<br>
+<strong>top_model</strong> = &lt;tensorflow.python.keras.engine.sequential.Sequential object&gt;<br>
+<strong>train_data_dir</strong> = './FaceEdited'<br>
+<strong>train_datagen</strong> = &lt;tensorflow.python.keras.preprocessing.image.ImageDataGenerator object&gt;<br>
+<strong>train_generator</strong> = &lt;keras_preprocessing.image.directory_iterator.DirectoryIterator object&gt;<br>
+<strong>validation_data_dir</strong> = './test2'<br>
+<strong>validation_datagen</strong> = &lt;tensorflow.python.keras.preprocessing.image.ImageDataGenerator object&gt;<br>
+<strong>validation_generator</strong> = &lt;keras_preprocessing.image.directory_iterator.DirectoryIterator object&gt;<br>
+<strong>vgg16</strong> = &lt;tensorflow.python.keras.engine.training.Model object&gt;<br>
+<strong>vgg_model</strong> = &lt;tensorflow.python.keras.engine.training.Model object&gt;</td></tr></table>
+</body></html>
