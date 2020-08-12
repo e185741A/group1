@@ -40,6 +40,12 @@ $ python learning.py
 ```
 $ python test.py
 ```
+# データセットの構築方法
+１．icrawlerによる画像の収集
+２．OpenCVを利用して顔(瞳)部分を抽出し、抜き出す
+３．不要な画像、顔以外が抜き出された画像の削除
+4 . 画像処理による画像の水増し
+
 
 # ファイルのせつめい
 
@@ -54,8 +60,8 @@ $ python test.py
 ## inflated.py：画像の水増しを行う
 + 学習画像を垂直方向への反転、90度回転、270度回転、グレー化、ヒストグラムの変更を行うことで画像の水増しを実行する。
 
-## learning.py：datasetを学習を行う
-+ datasetを元に，モデルを作成し、kerasでモデルを構築し、VGG16をFine-tuningしてモデルの学習を行う.
+## learning.py：datasetの学習を行う
++ datasetを元に、kerasでモデルを構築し、VGG16をFine-tuningしてモデルの学習を行う。
 + 結果はグラフと正解率を表示．
 
 ## test.py：顔判別を行う
